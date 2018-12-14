@@ -4,6 +4,7 @@ export function getItem(id: number) {
   const [item, setItem] = useState(null);
 
   const getItem = () => {
+    debugger
     new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve("Received");
@@ -13,7 +14,7 @@ export function getItem(id: number) {
       });
   };
 
-  useEffect(getItem);
+  useEffect(getItem, []);
 
   const isLoading = (item == null);
   return [item, isLoading];
