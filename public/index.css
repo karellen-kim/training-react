@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navibar {display: block; width:20%; position: relative; float: left;}
+.navibar a {display: block;}
+
+.content {display: block; width:80%; min-height: 800px; position: relative; float: right;}
+
+.themed-page .light {background-color:white;color:black;}
+.themed-page .dark {background-color: black;color:white;}
